@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>商品列表页</title>
+    <link rel="stylesheet" href="css/base.css" type="text/css" />
+    <link rel="stylesheet" href="css/shop_common.css" type="text/css" />
+    <link rel="stylesheet" href="css/shop_header.css" type="text/css" />
+    <link rel="stylesheet" href="css/shop_list.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/topNav.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="shop_hd">
+        <div class="shop_hd_topNav">
+            <div class="shop_hd_topNav_all">
+                <div class="shop_hd_topNav_all_left">
+                    <p>您好，欢迎来到
+                        <b>
+                        <a href="/">衣联网</a>
+                        </b>
+                            <a href="login.html" id="denglu">请登录</a>
+                                &nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="register.html" id="zuce">免费注册</a>
+                            <a href="" id="userName">XXX</a>
+                            <a href="" id="logout">退出</a>
+                    </p>
+                </div>
+                <div class="shop_hd_topNav_all_right">
+                    <ul class="topNav_quick_menu">
+                        <li>
+                            <div class="topNav_menu">
+                                <a href="#" class="topNavHover">我的衣联<i></i></a>
+                                <div class="topNav_menu_bd" style="display:none;">
+                                    <ul>
+                                        <li><a title="已买到的商品" target="_top" href="#">已买到的商品</a></li>
+                                        <li><a title="个人主页" target="_top" href="#">等待付款</a></li>
+                                        <li><a title="我的好友" target="_top" href="#">等付款</a></li>
+                                        <li><a title="我的好友" target="_top" href="#">等待付款哈哈</a></li>
+                                        <li><a title="我的好友" target="_top" href="#">哈哈付款</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="topNav_menu">
+                                <a href="#" class="topNavHover">手机逛衣联<i></i></a>
+                                <div class="topNav_menu_bd" style="display:none;">
+                                    <ul>
+                                        <li><a title="已售出的商品" target="_top" href="#">衣联网</a></li>
+                                        <li><a title="销售中的商品" target="_top" href="#">欢迎来到衣联网</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="topNav_menu">
+                                <a href="cart.html" class="topNavHover">购物车</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="topNav_menu">
+                                <a href="#" class="topNavHover">收藏夹<i></i></a>
+                                <div class="topNav_menu_bd" style="display:none;">
+                                    <ul>
+                                        <li><a title="收藏的商品" target="_top" href="#">收藏的商品</a></li>
+                                        <li><a title="收藏的店铺" target="_top" href="#">收藏的店铺</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="topNav_menu">
+                                <a href="#">站内消息</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="shop_hd_header">
+            <div class="shop_hd_header_logo">
+                <h1 class="logo"><a href="/"><img src="images/logo.png" alt="ShopCZ" /></a><span>ShopCZ</span></h1>
+            </div>
+            <div class="shop_hd_header_search">
+                <ul class="shop_hd_header_search_tab">
+                    <li id="search" class="current">商品</li>
+                    <li id="shop_search">店铺</li>
+                </ul>
+                <div class="clear"></div>
+                <div class="search_form">
+                    <form method="post" action="index.php">
+                        <div class="search_formstyle">
+                            <input type="text" class="search_form_text" name="search_content"/>
+                            <input type="submit" class="search_form_sub" name="secrch_submit" value="" title="搜索" />
+                        </div>
+                    </form>
+                </div>
+                <div class="clear"></div>
+                <div class="search_tag">
+                    <a href="">李宁</a>
+                    <a href="">耐克</a>
+                    <a href="">Kappa</a>
+                    <a href="">双肩包</a>
+                    <a href="">手提包</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="shop_hd_menu">
+            <!-- 普通导航菜单 -->
+            <ul class="shop_hd_menu_nav">
+                <li class="current_link"><a href="index.html"><span>首页</span></a></li>
+                <li class="link"><a href="#"><span>男装</span></a></li>
+                <li class="link"><a href="#"><span>女装</span></a></li>
+                <li class="link"><a href="#"><span>衣服</span></a></li>
+                <li class="link"><a href="#"><span>鞋子</span></a></li>
+                <li class="link"><a href="#"><span>运动</span></a></li>
+                <li class="link"><a href="#"><span>商城</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="shop_bd clearfix">
+        <div class="shop_bd_list_right clearfix">
+            <div class="module_filter">
+                <div class="module_filter_line">
+                    <dl>
+                        <dt>尺码：</dt>
+                        <dd>
+                            <span><a href="">XXS</a></span>
+                            <span><a href="">XS</a></span>
+                            <span><a href="">S</a></span>
+                            <span><a href="">M</a></span>
+                            <span><a href="">L</a></span>
+                            <span><a href="">XL</a></span>
+                            <span><a href="">XXL</a></span>
+                            <span><a href="">XXXL</a></span>
+                            <span><a href="">加大XXXL</a></span>
+                            <span><a href="">均码</a></span>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>品牌：</dt>
+                        <dd>
+                            <span><a href="">彪马</a></span>
+                            <span><a href="">安踏</a></span>
+                            <span><a href="">阿迪达斯</a></span>
+                            <span><a href="">李宁</a></span>
+                            <span><a href="">匡威</a></span>
+                            <span><a href="">耐克</a></span>
+                            <span><a href="">卡帕</a></span>
+                            <span><a href="">鸿星尔克</a></span>
+                            <span><a href="">沃特</a></span>
+                            <span><a href="">垃圾</a></span>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>款式：</dt>
+                        <dd>
+                            <span><a href="">长袖</a></span>
+                            <span><a href="">短袖</a></span>
+                            <span><a href="">无袖</a></span>
+                            <span><a href="">两件套</a></span>
+                            <span><a href="">宽松</a></span>
+
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>材质：</dt>
+                        <dd>
+                            <span><a href="">纯棉</a></span>
+                            <span><a href="">真丝</a></span>
+                            <span><a href="">聚酯</a></span>
+                            <span><a href="">棉+氨纶</a></span>
+                            <span><a href="">卡莱</a></span>
+                            <span><a href="">人造棉</a></span>
+                            <span><a href="">其它</a></span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="bottom"></div>
+            </div>
+            <!-- 条件筛选框 -->
+
+            <!-- 商品列表 -->
+            <div class="shop_bd_list_content clearfix">
+                <ul class="shop_ul_list">
+
+                    <!-- <li>
+                        <dl>
+                            <dt><a href=""><img src="images/21151da3bdefc6d9a7120c991fe59800.jpg_small.jpg" /></a></dt>
+                            <dd class="title"><a href="">OCIAIZO春装水洗做旧短外套复古磨白短款牛仔外套春01C1417</a></dd>
+                            <dd class="content">
+                                <span class="goods_jiage">￥<strong>249.00</strong></span>
+                            </dd>
+                        </dl>
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="clear"></div>
+    <div class="shop_footer">
+        <div class="shop_footer_link">
+            <p> <a href="">关于衣联</a> | <a href="">关于衣联</a> | <a href="">关于衣联</a> | <a href="">关于衣联</a> | <a
+                    href="">联系我们</a></p>
+        </div>
+        <div class="shop_footer_copy">
+            <p>Copyright©2003-2017 Eelly.com All Right Reserved.广州市衣联网络科技有限公司 版权所有 隐私申明 粤ICP备10209547号 公安备案号
+                44010402000492</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/shop_list.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body{
+    min-width: 1200px;
+}
+.top .top1 li:first-child{
+    margin-left: 30px;
+}
+.top .top1 li{
+    font-family: "宋体";
+    font-size: 16px;
+    float: left;
+    margin: 0 10px;
+}
+.top .top1 li a:hover{
+    color:pink;
+}

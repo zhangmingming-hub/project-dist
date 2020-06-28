@@ -1,0 +1,166 @@
+#userName{
+    display: none;
+}
+#logout{
+    display: none;
+}
+#denglu{
+    /* display: none; */
+}
+#zuce{
+    /* display: none; */
+}
+.top_search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+#search_form_text_xxx{
+    width: 500px;
+    height: 40px;
+    border: 4px solid salmon;
+    border-radius: 30px 0px 0px 30px;
+    outline: none;
+    font-size: 20px;
+    color: black;
+    margin-top: 15px;
+    position: relative;
+    margin-left: 200px;
+}
+.span_search{
+    width: 190px;
+    height: 48px;
+    float: left;
+    position: relative;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 0px 30px 30px 0px;
+    padding-left: 16px;
+    line-height: 50px;
+    background-color: salmon;
+    margin-top: 15px;
+}
+.span_search_ul{
+    font-family: "宋体";
+    font-size: 20px;
+}
+.span_search_ul li{
+    position: relative;
+    top: 70px;
+    width: 200px;
+    height: 20px;
+    list-style: none;
+    border: 1px solid grey;
+    z-index: 1;
+    border-radius: 10px;
+}
+.span_search_ul li a {
+    text-decoration: none;
+    color: black;
+}
+.span_search_ul li:hover {
+    background-color: grey;
+}
+.dispalayDiv {
+    position: relative;
+    width: 550px;
+    margin: 0 auto;
+}
+.secondMenu {
+    right: 0;
+    top: 0;
+    width: 300px;
+    position: absolute;
+    background-color: yellowgreen;
+}
+.red {
+    color: red;
+}
+
+
+
+/* 底部 */
+.bottom-all {
+    
+    background-color: #292A2C;
+}
+.bottom-nav i{
+    font-style: normal;
+}
+.clear_fix:after{
+    content:"";
+    clear:both;
+    overflow:hidden;
+    height:0;
+    visibility:hidden;
+    display:block;
+}
+/* 底部导航 */
+.bottom-nav{
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 100px;
+    background: #292A2C;
+    overflow: hidden;
+}
+/* 导航顶部 */
+.nav-top{
+    width: 100%;
+    margin: 30px 0;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-top>li{
+    width: 150px;
+    text-align: center;
+    font-size: 10px;
+    color: #999999;   
+}
+.nav-top>li>ul{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+.phoneLogin ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.phoneLogin ul #title{
+    font-size: 14px;
+    color: #CCCCCC;
+}
+.phoneLogin ul #phone,.phoneLogin ul #anzhuo{
+    width: 130px;
+    background: #4E4E4E;
+    height: 22px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#phone span,#anzhuo span{
+    width: 20%;
+    background: #1A1A1A;
+    margin: 0;
+}
+#phone i,#anzhuo i{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    background: #222222;
+}
+/* 图标部分 */
+.iconfont{
+    margin-right: 5px;
+}
+#head{
+    font-size: 16px;
+    color:#CCCCCC
+}

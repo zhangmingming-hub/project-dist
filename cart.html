@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>购物车页面</title>
+    <link rel="stylesheet" href="css/base.css" type="text/css" />
+    <link rel="stylesheet" href="css/shop_common.css" type="text/css" />
+    <link rel="stylesheet" href="css/shop_header.css" type="text/css" />
+    <link rel="stylesheet" href="css/cart.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/topNav.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="shop_hd">
+        <div class="shop_hd_topNav">
+            <div class="shop_hd_topNav_all">
+                <div class="shop_hd_topNav_all_left">
+                    <p>您好，欢迎来到
+                        <b>
+                        <a href="/">衣联网</a>
+                        </b>
+                            <a href="login.html" id="denglu">请登录</a>
+                                &nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="register.html" id="zuce">免费注册</a>
+                            <a href="" id="userName">XXX</a>
+                            <a href="" id="logout">退出</a>
+                    </p>
+                </div>
+                <div class="shop_hd_topNav_all_right">
+                    <ul class="topNav_quick_menu">
+                        <li>
+                            <div class="topNav_menu">
+                                <a href="#" class="topNavHover">我的衣联<i></i></a>
+                                <div class="topNav_menu_bd" style="display:none;">
+                                    <ul>
+                                        <li><a title="已买到的商品" target="_top" href="#">已买到的商品</a></li>
+                                        <li><a title="个人主页" target="_top" href="#">等待付款</a></li>
+                                        <li><a title="我的好友" target="_top" href="#">等付款</a></li>
+                                        <li><a title="我的好友" target="_top" href="#">等待付款哈哈</a></li>
+                                        <li><a title="我的好友" target="_top" href="#">哈哈付款</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="topNav_menu">
+                                <a href="#" class="topNavHover">手机逛衣联<i></i></a>
+                                <div class="topNav_menu_bd" style="display:none;">
+                                    <ul>
+                                        <li><a title="已售出的商品" target="_top" href="#">衣联网</a></li>
+                                        <li><a title="销售中的商品" target="_top" href="#">欢迎来到衣联网</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="topNav_menu">
+                                <a href="cart.html" class="topNavHover">购物车</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="topNav_menu">
+                                <a href="#" class="topNavHover">收藏夹<i></i></a>
+                                <div class="topNav_menu_bd" style="display:none;">
+                                    <ul>
+                                        <li><a title="收藏的商品" target="_top" href="#">收藏的商品</a></li>
+                                        <li><a title="收藏的店铺" target="_top" href="#">收藏的店铺</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="topNav_menu">
+                                <a href="#">站内消息</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="shop_hd_header">
+            <div class="shop_hd_header_logo">
+                <h1 class="logo"><a href="/"><img src="images/logo.png" alt="ShopCZ" /></a><span>ShopCZ</span></h1>
+            </div>
+            <div class="shop-header-right">
+                我的购物车！不要理性消费！买它！买它！
+            </div>
+        </div>
+
+        <div class="divTable">
+            <table border="1" cellspacing="0" width="1000" align="center" class="car-cont">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="checkAll"></th>
+                        <th>图片</th>
+                        <th>商品名称</th>
+                        <th>单价</th>
+                        <th>数量</th>
+                        <th>总价</th>
+                        <th>删除</th>
+                    </tr>
+                </thead>
+                <tbody class="cartList"></tbody>
+                <tr>
+                    <td colspan="7" id="totalPrice">
+                        你选择的商品总价为0元
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="clear"></div>
+        <div class="shop_footer">
+            <div class="shop_footer_link">
+                <p> <a href="">关于衣联</a> | <a href="">关于衣联</a> | <a href="">关于衣联</a> | <a href="">关于衣联</a> | <a
+                        href="">联系我们</a></p>
+            </div>
+            <div class="shop_footer_copy">
+                <p>Copyright©2003-2017 Eelly.com All Right Reserved.广州市衣联网络科技有限公司 版权所有 隐私申明 粤ICP备10209547号 公安备案号
+                    44010402000492</p>
+            </div>
+        </div>
+        <script src="js/cart.js"></script>
+        <script src="js/cartFun.js"></script>
+</body>
+
+</html>

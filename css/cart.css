@@ -1,0 +1,49 @@
+#userName{
+    display: none;
+}
+#logout{
+    display: none;
+}
+#denglu{
+    /* display: none; */
+}
+#zuce{
+    /* display: none; */
+}
+.divTable img {
+    width: 80px;
+    height: 80px;
+}
+.shop-header-right{
+    display: inline-block;
+    margin: 20px 0 0 30px;
+    font-size: 30px;
+    color: orangered;
+    font-family: "微软雅黑";
+}
+.cartList{
+    text-align: center;
+}
+.divTable table th{
+    font-size: 20px;
+    color: palevioletred;
+}
+.divTable table td{
+    line-height: 56px;
+    font-size: 20px;
+    color: black;
+}
+.divTable table td:nth-child(3) {
+    width: 400px;
+}
+.divTable table td button{
+    width: 120px;
+    height: 50px;
+    background-color: red;
+    font-size: 28px;
+    float: right;
+    margin-right: 20px;
+}
+.divTable table tr{
+    height: 80px;
+}
